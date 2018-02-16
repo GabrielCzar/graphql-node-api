@@ -11,7 +11,9 @@ class App {
     }
 
     private middleware(): void {
-        this.express.use('/graphql', graphqlHttp({ schema }))
+        this.express.use('/graphql', graphqlHttp({ 
+            schema, graphiql: process.env.NODE_ENV === 'development' 
+        }))
     }
 }
 
