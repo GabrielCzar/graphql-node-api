@@ -1,6 +1,10 @@
 # GraphQL NodeJs Api
 
-#### Execute Dev Config
+#### Execute Dev Configurations
 
 ```npm run gulp```
+
+#### Execute Dev Server
+
+```npm run dev```
 
