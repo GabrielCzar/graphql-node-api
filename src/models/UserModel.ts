@@ -46,4 +46,6 @@ export default (sequelize :Sequelize.Sequelize, dataTypes :Sequelize.DataTypes) 
             allowNull: true
         }
     });
+
+    return user;
 }
