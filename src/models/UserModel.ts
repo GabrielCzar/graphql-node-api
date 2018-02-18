@@ -56,6 +56,12 @@ export default (sequelize :Sequelize.Sequelize, dataTypes :Sequelize.DataTypes) 
             beforeCreate: (user :UserInstance, opts :Sequelize.CreateOptions) :void => {
                 const salt = genSaltSync();
                 user.password = hashSync(user.password, salt);
+            },
+            beforeUpdate: (user :UserInstance, opts :Sequelize.CreateOptions) :void => {
+                if (user.changed('password')) {
+                    const salt = genSaltSync();
+                    user.password = hashSync(user.password, salt);
+                }
             }
         }
     });
