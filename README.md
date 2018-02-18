@@ -1,6 +1,8 @@
 # GraphQL NodeJs Api
 
-<details><summary> #### Docker </summary>
+<details><summary><strong>
+Mysql Container Configurations
+</strong></summary>
 
 ##### Create Docker instance of Mysql
 
@@ -16,10 +18,16 @@
 
 </details>
 
-#### Execute Dev Configurations
+<details><summary><strong>
+Compile Configurations
+</strong></summary>
 
 ```npm run gulp```
+</details>
 
-#### Execute Dev Server
+<details><summary><strong>
+Execute Development Server
+</strong></summary>
 
 ```npm run dev```
+</details>
