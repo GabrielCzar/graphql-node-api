@@ -29,6 +29,12 @@ const typeDefs = `
     }
 `;
 const resolvers = {
+    // implementando resolvers triviais
+    User: {
+        id: (parent) => parent.id,
+        name: (parent) => parent.name,
+        email: (parent) => parent.email
+    },
     Query: {
         allUsers: () => users
     },
